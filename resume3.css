@@ -1,0 +1,307 @@
+body 
+{
+    margin: 0px;
+}
+header 
+{
+    position: fixed;
+    top: 0;
+    text-align:center;
+    width: 100vw;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    z-index: 10;
+}
+header > div
+{
+    display: flex;
+    height: 5vw;
+}
+.headerMenu
+{
+    background-color: white;
+    opacity: 0.7;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0 0 0.7vw 0;
+}
+.headerMenu#hmenu1
+{
+    border-color: #962d3e;
+}
+.headerMenu#hmenu2, .headerMenu#hmenu3, .headerMenu#hmenu4
+{
+    border-color: white;
+}
+.headerMenu:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+header > div > div > div /*text*/
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    color: black;
+}
+#hmenu1.menuPage 
+{
+    width: 100vw;
+    height: 60vw;
+    padding: 0;
+
+    background-color: white;
+    background-image: url(img/ben02.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 115vw;
+    background-position: 0vw -10vw;
+}
+#hmenu1.menuPage  > .detailed
+{
+    position: absolute;
+    display: inline-block;
+    top: 12vw;
+    height: 32vw;
+}
+#hmenu1.menuPage  > .detailed > .floatBox
+{
+    position: relative;
+    float: left;
+    left: -35vw;
+    width: 40vw;
+    height: 100%;
+    background-color: #962d3e;
+    transition: 1s;
+    z-index: 10;
+}
+.floatBox > .page
+{
+    position: absolute;
+    width: 40vw;
+}
+.floatBox > .page > div > img
+{
+    padding: 2vw 2vw 0vw 2vw;
+    height: 23vw;
+    display: block;
+    margin: 0 auto;
+}
+.floatBox > .page > div > h2,h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 2vw;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+}
+.floatBox > .page > div > h2
+{
+    margin-top: 0.7vw;
+    font-size: 2vw;
+}
+.floatBox > .page > div > h2 > a
+{
+    color: white;
+    text-decoration: none;
+}
+.floatBox > .page > div > h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+.floatBox > .arrow
+{
+    position: absolute;
+    height: 100%;
+    width: 5vw;
+    right: 0;
+    background-color: #343642;
+    color: white;
+    cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 8vw;
+}
+.floatBox > .arrow > div
+{
+    position: absolute;
+    height: auto;
+    top: 30%;
+}
+#hmenu1.menuPage  > .detailed > .floatBox > .floatBoxNav
+{
+    position: absolute;
+    bottom: -0.75vw;
+    width: 100%;
+    text-align: center;
+}
+#hmenu1.menuPage  > .detailed > .floatBox > .floatBoxNav > div
+{
+    position: relative;
+    display: inline-block;
+    background-color: #343642;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0vw 0.7vw 0vw 0.7vw;
+}
+#hmenu1.menuPage  > .detailed > .floatBox > .floatBoxNav > #n1
+{
+    background-color: #54565f;
+}
+#hmenu1.menuPage  > .detailed > .floatBox > .floatBoxNav > div:hover
+{
+    cursor: pointer;
+    background-color: #54565f;
+}
+.floatBox2
+{
+    position: relative;
+    display: inline-block;
+    left: -35vw;
+    width: 44vw;
+    height: 100%;
+    background-color: #f2ebc7;
+    transition: 1s;
+    color: #343642;
+
+    font-family: 'Droid Sans', sans-serif;
+}
+.floatBox2 > .skill
+{
+    display: inline-block;
+    /*position: absolute;*/
+    float: left;
+}
+.floatBox2 > .skill > .name
+{
+    margin: 0;
+    font-weight: 600;
+    transition: 1s;
+}
+.floatBox2 > .skill#n1 > .name
+{
+    font-weight: 600;
+    font-size: 5.5vw;
+}
+.floatBox2 > .skill#n1 > .name > div
+{
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 3vw;
+    transition: 1s;
+}
+.floatBox2 > .skill#n2 > .name
+{
+    margin-top: 3vw;
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 3vw;
+    width: auto;
+    transition: 1s;
+}
+.floatBox2 > .skill#n3 > .name
+{
+    margin-top: 3vw;
+    font-weight: 600;
+    font-size: 3.5vw;
+    line-height: 2vw;
+    width: auto;
+    transition: 1s;
+}
+.floatBox2 > .skill > .detailed
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    width: auto;
+    transition: 1s;
+}
+.menuPage#hmenu2, .menuPage#hmenu3, .menuPage#hmenu4
+{
+    position: relative;
+    font-family: 'Khula', sans-serif;
+    font-size: 3vw;
+    line-height: 3vw;
+    margin-top: 35%;
+    text-align: center;
+}
+.menuPage#hmenu2 > div, .menuPage#hmenu3 > div, .menuPage#hmenu4 > div
+{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+footer 
+{
+    background-color: #962d3e;
+    opacity: 1;
+    color: white;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5vw;
+    z-index: 6;
+}
+footer > img
+{
+    position: absolute; 
+    bottom: -0.4vw;
+    width: 6vw;
+    left: 0.5vw;
+    float: left;
+    transform: rotateZ(-12deg);
+    z-index: 7;
+}
+footer > .detailed
+{
+    position: absolute;
+    top: 0.5vw;
+    left: 7vw;
+    width: auto;
+    height: 100%;
+    z-index: 5;
+
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 3.4vw;
+}
+footer > .detailed > a
+{
+    color: white;
+    text-decoration: none;
+}
+footer > .personalInfo
+{
+    position: absolute;
+    top: 0vw;
+    right: 1vw;
+    width: auto;
+    height: 100%;
+    z-index: 5;
+
+    text-align: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 2.3vw;
+}
+footer > .personalInfo > p
+{
+    margin: 0;
+    font-size: 1.4vw;
+}

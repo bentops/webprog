@@ -1,0 +1,178 @@
+html, body
+{
+	background-color: #E8F8FF;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+nav
+{
+    background-color: #3399cc;
+    width: 100%;
+    height: 100%;
+    /*float:left;*/
+}
+#knowledge-search-nav-div
+{
+	position: fixed;
+	width: 25%;
+	height: 100%;
+    float:left;
+}
+.infoBox > h3
+{
+	margin-bottom: 1%;
+}
+.infoBox > h4
+{
+	margin-top: 1%;
+}
+input[type="text"]
+{
+	width: 90%;
+	height: 35px;
+	position: relative;
+	margin: 25% 0px 0px 5%;
+	border-bottom: solid;
+	border-width: 0px 0px 0px 0px;
+	background: white;
+	font-size: 1.25em;
+}
+#label
+{
+	position: absolute;
+	margin: 0% -3% 0% 0%;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+}
+#label > h1
+{
+	font-weight: 700;
+	position: absolute;
+	text-align: right;
+	bottom: 0px;
+	left: 0px;
+	font-size: 4.8vw;
+	margin: 0% 0% 0% 0%;
+	line-height: 80%;
+	color: white;
+}
+#search-button
+{
+	width: 90%;
+	height: 30px;
+	position: relative;
+	margin: 5% 0px 0px 5%;
+	background: white;
+	border-width: 0px 0px 0px 0px;
+	font-size: 1.1em;
+}
+#knowledge-results
+{
+	position: relative;
+	display: inline-block;
+	left: 26%;
+	width: 75%;
+	padding-left: 1%;
+	height: auto;
+	z-index: 0;
+}
+#knowledge-results > .result
+{
+	width: 22%;
+	height: 20vw;
+	margin: 1% 1% 1% 1%;
+	position: relative; 
+	background-color: white;
+  	color: #fff;
+  	border-radius: 5px;
+  	/*padding: 20px;*/
+  	font-size: 150%;
+  	float: left;
+  	position: top;
+    overflow: hidden;
+    cursor: pointer;
+}
+.resultImgDiv
+{
+	position: relative;
+	height: 65%;
+  	overflow: hidden;
+  	vertical-align: middle;
+}
+.resultImgDiv > .portrait
+{
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	width: 100%;
+  	height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.resultImgDiv > .landscape
+{
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	height: 100%;
+  	width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.resultInfoDiv
+{
+	position: relative;
+	height: 35%;
+	overflow: hidden;
+	padding-top: 0.5vw;
+}
+.resultInfoDiv > h3
+{
+	font-weight: 500;
+	position: relative;
+	text-align: left;
+	top: 0px;
+	left: 0px;
+	font-size: 1.3vw;
+	margin: 0% 0% 0% 0%;
+	color: black;
+}
+.resultInfoDiv > h4
+{
+	font-weight: 400;
+	font-style: italic;
+	position: relative;
+	text-align: left;
+	font-size: 1vw;
+	margin: 0% 0% 0% 0%;
+	color: black;
+}
+.resultInfoDiv > h6
+{
+	font-weight: 400;
+	position: relative;
+	text-align: left;
+	font-size: 0.8vw;
+	margin: 0% 0% 0% 0%;
+	color: black;
+}
+.infoBox
+{
+	position: relative;
+	top: 10%;
+	height: 40%;
+	color: white;
+	overflow: hidden;
+	font-weight: 300;
+	font-size: 1.5vw;
+	margin: 0% 1% 1% 5%;
+}
+.divLink
+{
+	display: block;
+}
