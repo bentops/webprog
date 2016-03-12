@@ -1,0 +1,129 @@
+body
+{
+	margin: 0;
+	background-color: white;
+}
+.header
+{
+	background-color: lightskyblue;
+	color: white;
+	height: auto;
+	display: flex;
+	font-family: 'Fjalla One', sans-serif;
+}
+.h1
+{
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	width: 50vw;
+	height: auto;
+}
+.h1 > h1
+{
+	margin: 0 0 0 1vw;
+	font-size: 5vw;
+}
+.h2
+{
+	position: relative;
+	display: inline-block;
+	width: 50vw;
+}
+.h2 > div
+{
+	width: 100%;
+	height: auto;
+}
+.h2 > #h2-1
+{
+	position: relative;
+}
+.h2 > #h2-2
+{
+	position: absolute;
+	bottom: 0;
+}
+.h2 > #h2-1 > h3
+{
+	margin: 3.5vw 1vw 0 0;
+	text-align: right;
+	font-size: 2.5vw;
+}
+.h2 > #h2-2 > h2
+{
+	margin: 0 1vw 0 0 ;
+	text-align: right;
+	font-size: 4vw;
+}
+h4
+{
+	margin: 4vw 0 0 10vw ;
+	text-align: left;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 5vw;
+	color: gray;
+}
+.content
+{
+	position: absolute;
+	top: 24vw;
+	left: 5vw;
+	background-color: lightskyblue;
+	width: 90vw;
+	height: auto;
+	padding-bottom: 4vw;
+	font-family: 'Cabin', sans-serif;
+}
+.content > div
+{
+	position: relative;
+	display: inline-block;
+	margin: 4vw 2vw 0vw 7vw;
+	width: 76vw;
+	height: 18vw;
+	background-color: white;
+	text-align: left;
+	cursor: pointer;
+}
+.content > div > .img
+{
+	position: relative;
+	display: inline-block;
+	width: 32vw;
+}
+.content > div > .img > img
+{
+	height: 18vw;
+}
+.content > div > .classno
+{
+	position: absolute;
+	right: -0.35vw;
+	top: -0.85vw;
+	display: inline-block;
+	width: 40vw;
+	text-align: right;
+}
+.content > div > .exname
+{
+	position: absolute;
+	right: -0.45vw;
+	bottom: -0.5vw;
+	display: inline-block;
+	width: 50vw;
+	text-align: right;
+}
+.content > div > .classno > h3
+{
+	margin: 0vw;
+	font-size: 3.5vw;
+	color: lightskyblue;
+}
+.content > div > .exname > h1
+{
+	margin: 0vw;
+	font-size: 5vw;
+	line-height: 4.5vw;
+	color: gray;
+}
