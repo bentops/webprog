@@ -10,15 +10,13 @@
 <body>
 <div id="wrapper">
     <div id="framing">
-        <canvas id="photo" width="800" height="600">
-            <div id="dropSpace"></div>
-        </canvas>
+        <canvas id="photo" width="800" height="600"></canvas>
         <div id="camera"></div>
         <div id="countdown"></div>
         <div id="overlay" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </div>
     <div id="camera-control">
-        <button><img src="src/photobutton.png"/></button>
+        <button id="capture"><img src="src/photobutton.png"/></button>
     </div>
     <div id="toolbar">
         <ul id="sticker-list">

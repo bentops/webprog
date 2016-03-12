@@ -3,17 +3,23 @@ var isCapture = false;
 var s = 1;
 $(document).ready(function(){
     CameraTool.initCameraOn("camera");
-    $("#camera-control > button").mousedown(capture);
+    $("#capture").mousedown(capturePress);
+    //$("#save").mousedown(savePhoto);
     $("body").keydown(keyevent);
 });
 
-function capture(){
+function savePhoto(){
+    var canvas = document.getElementById("bbb");  
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    window.location.href=image;
+}
+
+function capturePress(){
     if (isCapture == false){
-        
         countdown();
-        setTimeout(CameraTool.captureTo("photo"), 4000);
-        setTimeout(CameraTool.hideCamera(), 5000);
-        isCapture = true;
+        setTimeout(capture, 3500);
+        setTimeout(hide, 3500);
+        setTimeout(setIsCapture, 3500);
     } else {
         CameraTool.initCameraOn("camera");
         isCapture = false;
@@ -25,6 +31,18 @@ function countdown() {
     setTimeout(function(){$("#countdown").html("2");},1000);
     setTimeout(function(){$("#countdown").html("1");},2000);
     setTimeout(function(){$("#countdown").html("");},3000);
+}
+
+function capture(){
+    CameraTool.captureTo("photo");
+}
+
+function hide(){
+    CameraTool.hideCamera();
+}
+
+function setIsCapture() {
+    isCapture = (isCapture == true ? false : true);
 }
 
 //
@@ -124,7 +142,8 @@ function keyevent(ev){
         if(ev.which == 37) {
             $(".selected.sticker").each(function(){
                 $(this).context.dataset.rotation --;
-                $(this).css("transform","rotate(" + $(this).context.dataset.rotation + "deg)");                });
+                $(this).css("transform","rotate(" + $(this).context.dataset.rotation + "deg)");                
+            });
         } 
         else if(ev.which == 39) {
             $(".selected.sticker").each(function(){
@@ -213,7 +232,6 @@ var CameraTool = {
         var canvas = $("#"+id);
         canvas[0].getContext("2d").drawImage(CameraTool.video[0],0,0,canvas.width(),canvas.height());
         this.status = "loaded";
-        CameraTool.hideCamera();
     },
     hideCamera: function(){
         console.log("HIDE");
