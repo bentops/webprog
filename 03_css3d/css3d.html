@@ -1,0 +1,283 @@
+<html>
+
+<head>
+	<title></title>
+	<style type="text/css">
+		#top
+		{
+			margin: 100 0 0 0;
+			height: 200px;
+			width: 100%;
+			background-color: #5E412F;
+		}
+		body
+		{
+			font-family: monospace;
+			background-color: #FCEBB6;
+			margin: 0 0 0 0;
+			transform-origin: 200 300;
+			transform :rotateX(30deg) rotateY(0deg) rotateZ(-15deg);
+  			transform-style: preserve-3d;
+		}
+		h1
+		{
+			color: white;
+			padding-top: 50px;
+			padding-left: 200px;
+		    font-size: 8em;
+		}
+		h2
+		{
+			color: white;
+			text-align: left;
+		    font-size: 2em;
+		}
+		#headercontent
+		{
+		    margin-top: 30px;
+		    margin-left: 20px;
+			display: inline-block;
+		}
+		#buttoncontainer
+		{
+			float: left;
+  			position: top;
+		}
+		.button
+		{
+			height: 120px;
+			width: 300px;
+			position: relative;
+			margin-left: 200px;
+			box-shadow: -15px 35px 15px black;
+  			transform-style: preserve-3d;
+  			cursor: pointer;
+		}
+		#b1
+		{
+			background-color: #78C0A8;
+			margin-top: 50px;
+		}
+		#b2
+		{
+			background-color: #F07818;
+			margin-top: 30px;
+		}
+		#b3
+		{
+			background-color: #F0A830;
+			margin-top: 30px;
+		}
+		#b4
+		{
+			background-color: #5E412F;
+			margin-top: 30px;
+		}
+		.buttonleft
+		{
+			height: 120px;
+			width: 50px;
+			transform-origin : 0 0;
+			transform: rotateY( -90deg ) rotateZ(0deg) rotateX(0deg) translateY(-102px) translateX(-50px);
+			background-color: black;
+		}
+		.buttonbuttom
+		{
+			height: 50px;
+			width: 300px;
+			transform-origin : 0 0;
+			transform: rotateY( 0deg ) rotateZ(0deg) rotateX(90deg) translateY(135px) translateX(-28px);
+			background-color: black;
+		}
+		#piecontainer
+		{
+			margin-top: 50px;
+			margin-left: 550px;
+		}
+		.pie
+		{
+			width: 260px;
+			height: 260px;
+			border-radius: 50%;
+			background-color: #F0A830;
+		}
+		#p1
+		{
+			display: inline-block;
+		}
+		#p2
+		{
+			display: inline-block;
+			margin-left: 50px;
+		}
+		#p1-1
+		{
+			margin-left: 130px;
+			width: 130px;
+			height: 260px;
+			border-radius: 0 130 130 0;
+			background-color: black;
+			position:relative;
+			z-index: 0;
+		}
+		#p1-2
+		{
+			transform-origin: 0 50%;
+			transform: rotate(45deg) ;
+			margin-top: -260;
+			margin-left: 130px;
+			width: 130px;
+			height: 260px;
+			border-radius: 0 130 130 0;
+			background-color: black;
+			position:relative;
+			z-index: 0;
+		}
+		#p1no
+		{
+			width: 100px;
+			height: 100px;
+			margin-left: 80px;
+			margin-top: -180px;
+			border-radius: 50%;
+			background-color: white;
+			box-shadow: -10px 10px 10px -10px black;
+			position:relative;
+    		z-index: 1;
+		}
+		h4
+		{
+			position: absolute;
+			margin-left: 25px;
+			font-size: 2em;
+		}
+		#p2-1
+		{
+			margin-left: 130px;
+			width: 130px;
+			height: 260px;
+			border-radius: 0 130 130 0;
+			background-color: black;
+			position:relative;
+    		z-index: 0;
+		}
+		#p2-2
+		{
+			transform-origin: 0 50%;
+			transform: rotate(90deg) ;
+			margin-top: -260;
+			margin-left: 130px;
+			width: 130px;
+			height: 260px;
+			border-radius: 0 130 130 0;
+			background-color: #F0A830;
+			position:relative;
+    		z-index: 0;
+		}
+		#p2no
+		{
+			width: 100px;
+			height: 100px;
+			margin-left: 80px;
+			margin-top: -180px;
+			border-radius: 50%;
+			background-color: white;
+			box-shadow: -10px 10px 10px -10px black;
+			position:relative;
+    		z-index: 1;
+		}
+		#login
+		{
+			margin-top: 50px;
+			margin-left: 700px;
+		}
+		h3
+		{
+		    font-size: 2em;
+		    margin-top: 10px;
+		}
+		.input
+		{
+			margin-top: -20px;
+			width: 300px;
+			height: 40px;
+			border-bottom: dotted;
+			border-width: 0 0 4 0;
+			background: transparent;
+			font-family: monospace;
+			font-size: 1.5em;
+			text-indent: 0 0 2 0;
+		}
+		.button:hover
+		{
+			cursor: pointer;
+			box-shadow: -15px 35px 15px white;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="top">
+		<h1>FLAT ++</h1>
+	</div>
+
+	<div id="buttoncontainer">
+		<div id="b1" class="button">
+			<div id="headercontent"><h2>Button1</h2></div>
+			<div id="b1-l" class="buttonleft"></div>
+			<div id="b1-b" class="buttonbuttom"></div>		
+		</div>
+		<div id="b2" class="button">
+			<div id="headercontent"><h2>Button2</h2></div>
+			<div id="b2-l" class="buttonleft"></div>
+			<div id="b2-b" class="buttonbuttom"></div>		
+		</div>
+		<div id="b3" class="button">
+			<div id="headercontent"><h2>Button3</h2></div>
+			<div id="b3-l" class="buttonleft"></div>
+			<div id="b3-b" class="buttonbuttom"></div>		
+		</div>
+		<div id="b4" class="button">
+			<div id="headercontent"><h2>Button4</h2></div>
+			<div id="b4-l" class="buttonleft"></div>
+			<div id="b4-b" class="buttonbuttom"></div>		
+		</div>
+	</div>
+	
+	<div id="piecontainer">
+		<div id="p1" class="pie">
+			<div id="p1-1">
+				
+			</div>
+			<div id="p1-2">
+				
+			</div>
+			<div id="p1no">
+				<h4 id="percent">75%</h4>
+			</div>
+		</div>
+		<div id="p2" class="pie">
+			<div id="p2-1">
+				
+			</div>
+			<div id="p2-2">
+				
+			</div>
+			<div id="p2no">
+				<h4 id="percent">25%</h4>
+			</div>
+		</div>
+	</div>
+
+	<div id="login">
+		<form>
+			<h3>USER NAME</h3>
+			<input id="username" class="input" type="text"></input>
+			<h3>PASSWORD</h3>
+			<input id="password" class="input" type="password"></input>
+		</form>
+	</div>
+</body>
+
+</html>
