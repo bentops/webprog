@@ -18,17 +18,29 @@ body
 	margin: 0;
 	width: 50vw;
 	height: auto;
+	-webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+   	-moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+   	-ms-animation: fadeInLeft 2s; /* Internet Explorer */
+   	-o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+    animation: fadeInLeft 2s;
 }
 .h1 > h1
 {
 	margin: 0 0 0 1vw;
 	font-size: 5vw;
+  width: auto;
+  cursor: pointer;
 }
 .h2
 {
 	position: relative;
 	display: inline-block;
 	width: 50vw;
+	-webkit-animation: fadeInRight 2s; /* Safari, Chrome and Opera > 12.1 */
+   	-moz-animation: fadeInRight 2s; /* Firefox < 16 */
+   	-ms-animation: fadeInRight 2s; /* Internet Explorer */
+   	-o-animation: fadeInRight 2s; /* Opera < 12.1 */
+    animation: fadeInRight 2s;
 }
 .h2 > div
 {
@@ -63,6 +75,11 @@ h4
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 5vw;
 	color: gray;
+	-webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+   	-moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+   	-ms-animation: fadeInLeft 2s; /* Internet Explorer */
+   	-o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+    animation: fadeInLeft 2s;
 }
 .content
 {
@@ -85,6 +102,11 @@ h4
 	background-color: white;
 	text-align: left;
 	cursor: pointer;
+	-webkit-animation: bounceInUp 3s; /* Safari, Chrome and Opera > 12.1 */
+   	-moz-animation: bounceInUp 3s; /* Firefox < 16 */
+   	-ms-animation: bounceInUp 3s; /* Internet Explorer */
+   	-o-animation: bounceInUp 3s; /* Opera < 12.1 */
+    animation: bounceInUp 3s;
 }
 .content > div > .img
 {
@@ -126,4 +148,144 @@ h4
 	font-size: 5vw;
 	line-height: 4.5vw;
 	color: gray;
+}
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
 }
